@@ -31,8 +31,6 @@ define Package/libreswan/default
   CATEGORY:=Network
   TITLE:=Libreswan
   URL:=https://libreswan.org/
-  PROVIDES:=openswan
-  CONFLICTS:=strongswan
 endef
 
 define Package/libreswan
@@ -70,6 +68,8 @@ define Package/libreswan
 	  +kmod-crypto-sha512 \
 	  +kmod-crypto-xcbc \
 	  +kmod-crypto-rng
+  PROVIDES:=openswan
+  CONFLICTS:=strongswan
 endef
 
 define Package/libreswan/description
